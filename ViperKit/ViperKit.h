@@ -6,14 +6,7 @@
 //  Copyright © 2017 Bondar Yaroslav. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
-//! Project version number for ViperKit.
 FOUNDATION_EXPORT double ViperKitVersionNumber;
-
-//! Project version string for ViperKit.
 FOUNDATION_EXPORT const unsigned char ViperKitVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <ViperKit/PublicHeader.h>
-
-

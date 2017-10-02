@@ -13,11 +13,11 @@
 		66CC279D1F7C3EEC00D6EFF2 /* ViperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CC27981F7C3EEC00D6EFF2 /* ViperController.swift */; };
 		66CC279E1F7C3EEC00D6EFF2 /* ConfigurationBlockHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CC27991F7C3EEC00D6EFF2 /* ConfigurationBlockHolder.swift */; };
 		66CC279F1F7C3EEC00D6EFF2 /* ModuleInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CC279A1F7C3EEC00D6EFF2 /* ModuleInputProvider.swift */; };
-		66DAF1121F82B03E0011536C /* ViperKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 66DAF1101F82B03E0011536C /* ViperKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66DAF1161F82B0580011536C /* ConfigurationBlockHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CC27991F7C3EEC00D6EFF2 /* ConfigurationBlockHolder.swift */; };
 		66DAF1171F82B0580011536C /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CC27961F7C3EEC00D6EFF2 /* ModuleInput.swift */; };
 		66DAF1181F82B0580011536C /* ModuleInputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CC279A1F7C3EEC00D6EFF2 /* ModuleInputProvider.swift */; };
 		66DAF1191F82B0580011536C /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CC27971F7C3EEC00D6EFF2 /* TransitionHandler.swift */; };
+		66DAF1291F82B5540011536C /* ViperKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 66CC278E1F7C3EAC00D6EFF2 /* ViperKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,7 @@
 		66CC27981F7C3EEC00D6EFF2 /* ViperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperController.swift; sourceTree = "<group>"; };
 		66CC27991F7C3EEC00D6EFF2 /* ConfigurationBlockHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationBlockHolder.swift; sourceTree = "<group>"; };
 		66CC279A1F7C3EEC00D6EFF2 /* ModuleInputProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInputProvider.swift; sourceTree = "<group>"; };
-		66DAF10E1F82B03E0011536C /* ViperKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		66DAF1101F82B03E0011536C /* ViperKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViperKit_macOS.h; sourceTree = "<group>"; };
-		66DAF1111F82B03E0011536C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66DAF10E1F82B03E0011536C /* ViperKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				66CC278D1F7C3EAC00D6EFF2 /* ViperKit */,
-				66DAF10F1F82B03E0011536C /* ViperKit macOS */,
 				66CC278C1F7C3EAC00D6EFF2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				66CC278B1F7C3EAC00D6EFF2 /* ViperKit.framework */,
-				66DAF10E1F82B03E0011536C /* ViperKit_macOS.framework */,
+				66DAF10E1F82B03E0011536C /* ViperKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,15 +81,6 @@
 			path = ViperKit;
 			sourceTree = "<group>";
 		};
-		66DAF10F1F82B03E0011536C /* ViperKit macOS */ = {
-			isa = PBXGroup;
-			children = (
-				66DAF1101F82B03E0011536C /* ViperKit_macOS.h */,
-				66DAF1111F82B03E0011536C /* Info.plist */,
-			);
-			path = "ViperKit macOS";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -108,7 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66DAF1121F82B03E0011536C /* ViperKit_macOS.h in Headers */,
+				66DAF1291F82B5540011536C /* ViperKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +136,7 @@
 			);
 			name = "ViperKit macOS";
 			productName = "ViperKit macOS";
-			productReference = 66DAF10E1F82B03E0011536C /* ViperKit_macOS.framework */;
+			productReference = 66DAF10E1F82B03E0011536C /* ViperKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -402,12 +390,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "ViperKit macOS/Info.plist";
+				INFOPLIST_FILE = ViperKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.by.ViperKit-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = by.ViperKit;
+				PRODUCT_NAME = ViperKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -425,12 +413,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "ViperKit macOS/Info.plist";
+				INFOPLIST_FILE = ViperKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.by.ViperKit-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = by.ViperKit;
+				PRODUCT_NAME = ViperKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
